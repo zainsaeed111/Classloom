@@ -9,19 +9,19 @@ class OnboradViewmodel extends GetxController{
       onboardTitle: "Welcome to Classloom",
       onboardSubtitle:
           "Your ultimate platform for seamless learning, offering a comprehensive solution for all your educational needs and goals",
-      onboardImage: "assets/svgs/example_svg.png",
+      onboardImage: "assets/svgs/example_svg.svg",
     ),
     OnBoardingModel(
       onboardTitle: "Explore Courses",
       onboardSubtitle:
           "Discover a diverse range of courses meticulously tailored to align with your unique learning aspirations and personal interests",
-      onboardImage: "assets/svgs/classloomlogo500.png",
+      onboardImage: "assets/svgs/classloomlogosvg500.svg",
     ),
     OnBoardingModel(
       onboardTitle: "Proper Access",
       onboardSubtitle:
           "Gain exclusive access to premium courses carefully designed to empower you with knowledge and skills for success",
-      onboardImage: "assets/svgs/example_svg.png",
+      onboardImage: "assets/svgs/example_svg.svg",
     ),
  ];
 

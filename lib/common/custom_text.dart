@@ -8,6 +8,7 @@ class CustomText extends StatelessWidget {
   final FontWeight? fontWeight;
   final double? fontSize;
   final Color? color;
+  final TextAlign? textAlign;
 
 const CustomText(
     this.text, {
@@ -15,6 +16,7 @@ const CustomText(
     this.fontWeight,
     this.color,
     this.style,
+    this.textAlign,
     Key? key,
   }) : super(key: key);
   
@@ -22,9 +24,11 @@ const CustomText(
   Widget build(BuildContext context) {
     return Text(
       text,
+      textAlign: textAlign?? TextAlign.start,
       style: style ??
           GoogleFonts.inter(
             fontSize: fontSize ?? 14.0,
+            
             fontWeight: fontWeight ?? FontWeight.normal,
             color: color ?? Colors.black,
           ),
