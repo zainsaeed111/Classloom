@@ -17,8 +17,8 @@ const CustomText(
     this.color,
     this.style,
     this.textAlign,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
   
   @override
   Widget build(BuildContext context) {

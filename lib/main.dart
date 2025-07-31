@@ -1,7 +1,10 @@
+import 'package:classloom/bindings/onboard_binding.dart';
 import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
 import 'package:classloom/view/screens/onboard_screen.dart';
+import 'package:classloom/view/screens/roleselection_screen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
@@ -27,8 +30,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: app_colors.primaryColor),
       ),
      initialRoute: '/',
+     home: const RoleSelection(),
      getPages: [
-        GetPage(name: '/', page: () =>  OnboardScreen()),
+        GetPage(name: '/onboard', page: () =>  OnboardScreen(), binding: OnboardBinding()),
      ],
    
     );

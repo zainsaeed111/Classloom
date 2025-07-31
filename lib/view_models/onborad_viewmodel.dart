@@ -1,9 +1,24 @@
 import 'package:classloom/models/onboarding_model.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
 class OnboradViewmodel extends GetxController{
   var currentPageIndex=0.obs;
+  late PageController pageController;
+
+  @override
+  void onInit() {
+    super.onInit();
+    pageController = PageController();
+  }
+  @override
+  onClose() {
+    pageController.dispose();
+    super.onClose();
+  }
+
+  
  List<OnBoardingModel> onBoardingList = [
     OnBoardingModel(
       onboardTitle: "Welcome to Classloom",
@@ -28,8 +43,11 @@ class OnboradViewmodel extends GetxController{
  void updatePageIndex(){
   if(currentPageIndex.value<onBoardingList.length-1){
     currentPageIndex.value++;
-  }else{
-    Get.offAllNamed('/auth');
+        pageController.nextPage(
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeInOut,
+      );  }else{
+    finishOnBoarding();
   }
  }
 

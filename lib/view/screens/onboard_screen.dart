@@ -8,8 +8,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
 class OnboardScreen extends StatelessWidget {
-  final onboardVm = Get.put(OnboradViewmodel());
-  final pagerContoller = PageController();
+final onboardVm = Get.find<OnboradViewmodel>();
 
   OnboardScreen({super.key});
 
@@ -42,8 +41,9 @@ class OnboardScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Expanded(
-                child: PageView.builder(
-                  controller: pagerContoller,
+                child: 
+                PageView.builder(
+                  controller: onboardVm.pageController,
                   onPageChanged: onboardVm.onPageChanged,
                   itemCount: onboardVm.onBoardingList.length,
                   itemBuilder: (_, index) {
