@@ -2,15 +2,18 @@ import 'package:flutter/widgets.dart';
 
 const Color primaryColor = Color(0xFF093453);
  // Primary call-to-action (CTA), active icons, highlights
-   const ctaOrange = Color(0xFFFD9A4D);
+   const ctaOrange =      Color(0xFFFD9A4D);
    const  secondaryColor = Color(0xFF0B5B8F); // deep sky blue
    const  thirdColor = Color(0xFF128C7E); // teal (like WhatsApp)
+   const Color primaryLightColor = Color(0xFFB3C9D6);
+const Color primaryExtraLightColor = Color(0xFF8FB6C9); // Softer, good for screen backgrounds  
+
 
 
   // Informational tags, highlights, badges
-   const infoBlue = Color(0xFF92CAF2);
+   const  infoBlue  =   Color(0xFF92CAF2);
    const  textWhite = Color(0xFFFFFFFF);
-const  textBlack = Color(0xFF000000);
+   const  textBlack = Color(0xFF000000);
 
 
   // Cards, white containers, content background
