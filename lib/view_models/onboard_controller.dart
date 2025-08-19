@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
-class OnboradViewmodel extends GetxController{
+class OnboradController extends GetxController{
   var currentPageIndex=0.obs;
   late PageController pageController;
 

@@ -1,10 +1,10 @@
 
-import 'package:classloom/view_models/onborad_viewmodel.dart';
+import 'package:classloom/view_models/onboard_controller.dart';
 import 'package:get/get.dart';
 
 class OnboardBinding extends Bindings{
   @override
   void dependencies() {
-    Get.lazyPut(() => OnboradViewmodel());
+    Get.lazyPut(() => OnboradController());
   }
 }

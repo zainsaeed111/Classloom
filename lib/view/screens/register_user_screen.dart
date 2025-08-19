@@ -2,7 +2,6 @@ import 'package:classloom/common/custom_button.dart';
 import 'package:classloom/common/custom_text.dart';
 import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart'; // Optional if not used
 
 class RegisterUser extends StatelessWidget {
@@ -45,11 +44,11 @@ class RegisterUser extends StatelessWidget {
                     textAlign: TextAlign.start,
                   ),
                   const SizedBox(height: 30),
-                  CustomText('Fisrt Name', fontSize: 16, color: app_colors.primaryColor, fontWeight: FontWeight.w500,),
+                  CustomText('Full Name', fontSize: 16, color: app_colors.primaryColor, fontWeight: FontWeight.w500,),
                   const SizedBox(height: 5),
                   TextFormField(
                     decoration: InputDecoration(
-                      hintText: 'john',
+                      hintText: 'johnMark',
                       prefixIcon: Icon(Icons.person, color: app_colors.primaryColor),         
                     ),
                     style: GoogleFonts.inter(
@@ -57,21 +56,22 @@ class RegisterUser extends StatelessWidget {
                       fontSize: 16
                     ),
                     keyboardType: TextInputType.name,
-                  ),
+                  ),                 
                  const SizedBox(height: 10),
-                 CustomText('Last Name', fontSize: 16, color: app_colors.primaryColor, fontWeight: FontWeight.w500,),
-                  const SizedBox(height: 5),
+                 CustomText('Username', fontSize:16, color: app_colors.primaryColor, fontWeight: FontWeight.w500,),
+                 const SizedBox(height: 5),
                   TextFormField(
                     decoration: InputDecoration(
-                      hintText: 'mark',
-                      prefixIcon: Icon(Icons.person, color: app_colors.primaryColor),        
+                      hintText: 'johnmark1',
+                      prefixIcon: Icon(Icons.person, color: app_colors.primaryColor),
                     ),
-                     style: GoogleFonts.inter(
+                    style: GoogleFonts.inter(
                       color: app_colors.textBlack,
                       fontSize: 16
                     ),
-                  keyboardType: TextInputType.name,
-                  ),
+                   keyboardType: TextInputType.emailAddress
+
+                  ), 
                  const SizedBox(height: 10),
                  CustomText('Email', fontSize:16, color: app_colors.primaryColor, fontWeight: FontWeight.w500,),
                  const SizedBox(height: 5),
@@ -106,8 +106,7 @@ class RegisterUser extends StatelessWidget {
                     decoration: InputDecoration(
                       hintText:'********',
                       prefixIcon: Icon(Icons.lock, color: app_colors.primaryColor,),
-                      
-
+  
                     ),
                     style: GoogleFonts.inter(color: app_colors.textBlack,
                     fontSize: 16),

@@ -1,14 +1,14 @@
 import 'package:classloom/common/custom_button.dart';
 import 'package:classloom/common/custom_text.dart';
 import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
-import 'package:classloom/view_models/onborad_viewmodel.dart';
+import 'package:classloom/view_models/onboard_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
 class OnboardScreen extends StatelessWidget {
-final onboardVm = Get.find<OnboradViewmodel>();
+final onboardVm = Get.find<OnboradController>();
 
   OnboardScreen({super.key});
 

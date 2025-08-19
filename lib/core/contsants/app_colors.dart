@@ -6,7 +6,8 @@ const Color primaryColor = Color(0xFF093453);
    const  secondaryColor = Color(0xFF0B5B8F); // deep sky blue
    const  thirdColor = Color(0xFF128C7E); // teal (like WhatsApp)
    const Color primaryLightColor = Color(0xFFB3C9D6);
-const Color primaryExtraLightColor = Color(0xFF8FB6C9); // Softer, good for screen backgrounds  
+const Color primaryExtraLightColor = Color(0xFF8FB6C9); // Softer, good for screen backgrounds 
+const Color screenBgColor = Color(0xFFF1F4F8); // Light gray for screens 
 
 
 

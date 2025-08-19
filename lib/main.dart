@@ -1,9 +1,7 @@
 import 'package:classloom/bindings/onboard_binding.dart';
 import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
 import 'package:classloom/view/screens/onboard_screen.dart';
-import 'package:classloom/view/screens/register_teacher_step_two_screen.dart';
-import 'package:classloom/view/screens/register_user_screen.dart';
-import 'package:classloom/view/screens/roleselection_screen.dart';
+import 'package:classloom/view/screens/user_login_screen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -31,7 +29,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: app_colors.primaryColor),
       ),
      initialRoute: '/',
-     home: const RegisterTeacherStepTwoScreen(),
+     home:  LoginUser(),
      getPages: [
         GetPage(name: '/onboard', page: () =>  OnboardScreen(), binding: OnboardBinding()),
      ],
