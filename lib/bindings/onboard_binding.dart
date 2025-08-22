@@ -1,5 +1,5 @@
 
-import 'package:classloom/view_models/onboard_controller.dart';
+import 'package:classloom/controllers/onboard_controller.dart';
 import 'package:get/get.dart';
 
 class OnboardBinding extends Bindings{
