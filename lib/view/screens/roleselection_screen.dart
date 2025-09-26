@@ -1,6 +1,6 @@
 import 'package:classloom/common/custom_button.dart';
 import 'package:classloom/common/custom_text.dart';
-import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
+import 'package:classloom/core/contsants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -12,7 +12,7 @@ class RoleSelection extends StatelessWidget {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
 
     return Scaffold( 
-      backgroundColor: app_colors.primaryColor,
+      backgroundColor: AppColors.primaryColor,
       resizeToAvoidBottomInset: false, 
       body: SafeArea(
         
@@ -24,12 +24,12 @@ class RoleSelection extends StatelessWidget {
         children: [
            CustomText('Welcome to classloom 👋', 
             fontSize: 34, fontWeight: FontWeight.bold,
-            color: app_colors.textWhite,
+            color: AppColors.textWhite,
           ),
           SizedBox(height: 15,),
           CustomText('Let’s get started by choosing your role ', 
             fontSize: 28, fontWeight: FontWeight.w400,
-            color: app_colors.textWhite,
+            color: AppColors.textWhite,
           ),
           SizedBox(height: 40,),
           CustomButton(buttonText: 'I am a Teacher',
@@ -37,12 +37,12 @@ class RoleSelection extends StatelessWidget {
            TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.w700,
-            color: app_colors.primaryColor,),
-            buttonBackgorundColor: app_colors.ctaOrange,
+            color: AppColors.primaryColor,),
+            buttonBackgorundColor: AppColors.ctaOrange,
             buttonBorderRadius: 20,
             buttonBorderWidth: 2,
             buttonIcon: Icons.school,
-            iconColor: app_colors.primaryColor,
+            iconColor: AppColors.primaryColor,
             buttonHeight: 75,
             iconSize: 60,
             onPressed: () {
@@ -55,12 +55,12 @@ class RoleSelection extends StatelessWidget {
            TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.w700,
-            color: app_colors.primaryColor,),
-            buttonBackgorundColor: app_colors.thirdColor,
+            color: AppColors.primaryColor,),
+            buttonBackgorundColor: AppColors.thirdColor,
             buttonBorderRadius: 20,
             buttonBorderWidth: 2,
             buttonIcon: Icons.person_2,
-            iconColor: app_colors.primaryColor,
+            iconColor: AppColors.primaryColor,
             buttonHeight: 75,
             iconSize: 60,
             onPressed: () {
@@ -72,9 +72,9 @@ class RoleSelection extends StatelessWidget {
             child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomText('Already have an account?',color: app_colors.textWhite,fontSize: 18,fontWeight: FontWeight.w400,),
+              CustomText('Already have an account?',color: AppColors.textWhite,fontSize: 18,fontWeight: FontWeight.w400,),
               SizedBox(width: 5,),
-              CustomText('Login',color: app_colors.ctaOrange,fontSize: 18,fontWeight: FontWeight.w400,)
+              CustomText('Login',color: AppColors.ctaOrange,fontSize: 18,fontWeight: FontWeight.w400,)
 
             ],
           )

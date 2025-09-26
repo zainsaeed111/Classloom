@@ -1,19 +1,14 @@
+import 'package:classloom/bindings/home_binding.dart';
 import 'package:classloom/bindings/onboard_binding.dart';
-import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
+import 'package:classloom/core/contsants/app_colors.dart';
+import 'package:classloom/view/screens/bottomnav/home_screen.dart';
 import 'package:classloom/view/screens/onboard_screen.dart';
-import 'package:classloom/view/screens/user_login_screen.dart';
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
 void main() {
-  runApp(DevicePreview(
-    enabled: true,
-    builder: (context) {
-      return const MyApp();
-    },
-  ));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -26,14 +21,23 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Classloom',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: app_colors.primaryColor),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
       ),
-     initialRoute: '/',
-     home:  LoginUser(),
-     getPages: [
-        GetPage(name: '/onboard', page: () =>  OnboardScreen(), binding: OnboardBinding()),
-     ],
-   
+      initialRoute: '/',
+      home: MainHomeScreen(),
+      initialBinding: HomeBinding(),
+      getPages: [
+        GetPage(
+          name: '/onboard',
+          page: () => OnboardScreen(),
+          binding: OnboardBinding(),
+        ),
+        GetPage(
+          name: '/home',
+          page: () => MainHomeScreen(),
+          binding: HomeBinding(),
+        ),
+      ],
     );
   }
 }

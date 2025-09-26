@@ -1,11 +1,12 @@
 import 'package:classloom/common/custom_button.dart';
 import 'package:classloom/common/custom_text.dart';
-import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
 import 'package:classloom/controllers/onboard_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+
+import '../../core/contsants/app_colors.dart';
 
 class OnboardScreen extends StatelessWidget {
 final onboardVm = Get.find<OnboradController>();
@@ -29,7 +30,7 @@ final onboardVm = Get.find<OnboradController>();
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadiusGeometry.circular(10),
                     ),
-                    backgroundColor: app_colors.primaryColor,
+                    backgroundColor: AppColors.primaryColor,
                   ),
                   child: CustomText(
                     'Skip',
@@ -64,7 +65,7 @@ final onboardVm = Get.find<OnboradController>();
                             textAlign: TextAlign.center,
                             fontSize: 24,
                             fontWeight: FontWeight.w600,
-                            color: app_colors.primaryColor,
+                            color: AppColors.primaryColor,
                           ),
                           SizedBox(height: 10),
                           CustomText(
@@ -95,7 +96,7 @@ final onboardVm = Get.find<OnboradController>();
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: onboardVm.currentPageIndex.value == index
-                              ? app_colors.primaryColor
+                              ? AppColors.primaryColor
                               : Colors.grey.shade300,
                         ),
                       ),
@@ -113,13 +114,13 @@ final onboardVm = Get.find<OnboradController>();
                       : "Next",
                   buttonGradeient: const LinearGradient(
                     colors: <Color>[
-                      app_colors.primaryColor,
-                      app_colors.thirdColor,
+                      AppColors.primaryColor,
+                      AppColors.thirdColor,
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
-                  buttonTextColor: app_colors.textWhite,
+                  buttonTextColor: AppColors.textWhite,
                   buttonBorderRadius: 25,
                   buttonHeight: 50,
                   buttonWidth: double.infinity,

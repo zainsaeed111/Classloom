@@ -1,8 +1,8 @@
 import 'package:classloom/common/custom_button.dart';
 import 'package:classloom/common/custom_text.dart';
-import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../core/contsants/app_colors.dart';
 
 class LoginUser extends StatelessWidget {
   const LoginUser({super.key});
@@ -10,10 +10,10 @@ class LoginUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: app_colors.screenBgColor,
+      backgroundColor: AppColors.screenBgColor,
       appBar: AppBar(
         centerTitle: true,
-        title: CustomText('Login', fontSize: 20, color: app_colors.primaryColor),
+        title: CustomText('Login', fontSize: 20, color: AppColors.primaryColor),
 
 
       ),
@@ -30,42 +30,42 @@ class LoginUser extends StatelessWidget {
                   'Welcome Back',
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
-                  color: app_colors.primaryColor,
+                  color: AppColors.primaryColor,
                 ),
                 const SizedBox(height: 8),
                 CustomText(
                   'Please login to your account',
                   fontSize: 14,
-                  color: app_colors.primaryColor,
+                  color: AppColors.primaryColor,
                   textAlign: TextAlign.start,
                 ),
                 const SizedBox(height: 30),
-                CustomText('Enter your email', fontSize: 16, color: app_colors.primaryColor, fontWeight: FontWeight.w500,),
+                CustomText('Enter your email', fontSize: 16, color: AppColors.primaryColor, fontWeight: FontWeight.w500,),
                 const SizedBox(height: 5),  
                 TextFormField(
                   decoration: InputDecoration(
                     hintText: "user@gmail.com",
-                    prefixIcon: Icon(Icons.email, color: app_colors.primaryColor),
+                    prefixIcon: Icon(Icons.email, color: AppColors.primaryColor),
 
                   ),
                   style: GoogleFonts.inter(
-                    color: app_colors.textBlack,
+                    color: AppColors.textBlack,
                     fontSize: 16
                   ),
                   keyboardType: TextInputType.emailAddress,
                 ),
                 const SizedBox(height: 5),  
-              CustomText('Enter your email', fontSize: 16, color: app_colors.primaryColor, fontWeight: FontWeight.w500,),
+              CustomText('Enter your email', fontSize: 16, color: AppColors.primaryColor, fontWeight: FontWeight.w500,),
                 const SizedBox(height: 10),  
 
                 TextFormField(
                   decoration: InputDecoration(
                     hintText: "********",
-                    prefixIcon: Icon(Icons.lock, color: app_colors.primaryColor),
+                    prefixIcon: Icon(Icons.lock, color: AppColors.primaryColor),
 
                   ),
                   style: GoogleFonts.inter(
-                    color: app_colors.textBlack,
+                    color: AppColors.textBlack,
                     fontSize: 16
                   ),
                   keyboardType: TextInputType.emailAddress,
@@ -77,8 +77,8 @@ class LoginUser extends StatelessWidget {
                   },
                   buttonGradeient: LinearGradient(
                     colors: <Color>[
-                      app_colors.primaryColor,
-                      app_colors.thirdColor,
+                      AppColors.primaryColor,
+                      AppColors.thirdColor,
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight, 

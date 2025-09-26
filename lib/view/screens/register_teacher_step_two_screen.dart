@@ -1,8 +1,9 @@
 import 'package:circular_badge_avatar/circular_badge_avatar.dart';
 import 'package:classloom/common/custom_button.dart';
 import 'package:classloom/common/custom_text.dart';
-import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
 import 'package:flutter/material.dart';
+import '../../core/contsants/app_colors.dart';
+
 
 class RegisterTeacherStepTwoScreen extends StatelessWidget {
   const RegisterTeacherStepTwoScreen({super.key});
@@ -10,11 +11,11 @@ class RegisterTeacherStepTwoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: app_colors.textWhite,
+      backgroundColor: AppColors.textWhite,
         appBar: AppBar(
           centerTitle: true,
-           backgroundColor: app_colors.textWhite,
-          iconTheme: IconThemeData(color: app_colors.primaryColor),       
+           backgroundColor: AppColors.textWhite,
+          iconTheme: IconThemeData(color: AppColors.primaryColor),       
           title: CustomText('Compelete Registeration', fontSize: 20),
          ),
         body: SafeArea(child: SizedBox(
@@ -42,25 +43,25 @@ class RegisterTeacherStepTwoScreen extends StatelessWidget {
       ),
     ),
                     const SizedBox(height: 20,),
-                    CustomText('Organization Name (Optional)', fontSize: 16, color: app_colors.primaryColor, fontWeight: FontWeight.w500,),
+                    CustomText('Organization Name (Optional)', fontSize: 16, color: AppColors.primaryColor, fontWeight: FontWeight.w500,),
                     const SizedBox(height: 10),
                     TextFormField(
                       decoration: InputDecoration(
                         hintText: 'Enter Organization Name ',
-                        prefixIcon: Icon(Icons.business, color: app_colors.primaryColor),         
+                        prefixIcon: Icon(Icons.business, color: AppColors.primaryColor),         
                       ),
-                      style: const TextStyle(color: app_colors.textBlack, fontSize: 16),
+                      style: const TextStyle(color: AppColors.textBlack, fontSize: 16),
                       keyboardType: TextInputType.name,
                     ),
                     const SizedBox(height: 15),
-                    CustomText('Organization Email (Optional)', fontSize: 16, color: app_colors.primaryColor, fontWeight: FontWeight.w500,),
+                    CustomText('Organization Email (Optional)', fontSize: 16, color: AppColors.primaryColor, fontWeight: FontWeight.w500,),
                     const SizedBox(height: 10),    
                     TextFormField(
                       decoration: InputDecoration(
                         hintText: 'Enter Organization Email',
-                        prefixIcon: Icon(Icons.email, color: app_colors.primaryColor),         
+                        prefixIcon: Icon(Icons.email, color: AppColors.primaryColor),         
                       ),
-                      style: const TextStyle(color: app_colors.textBlack, fontSize: 16),
+                      style: const TextStyle(color: AppColors.textBlack, fontSize: 16),
                       keyboardType: TextInputType.emailAddress,
                     ),
                     const SizedBox(height: 25),
@@ -70,8 +71,8 @@ class RegisterTeacherStepTwoScreen extends StatelessWidget {
                   },
                   buttonGradeient: LinearGradient(
                     colors: <Color>[
-                      app_colors.primaryColor,
-                      app_colors.thirdColor,
+                      AppColors.primaryColor,
+                      AppColors.thirdColor,
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight, 

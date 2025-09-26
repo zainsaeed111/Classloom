@@ -1,5 +1,6 @@
-import 'package:classloom/core/contsants/app_colors.dart' as app_colors;
 import 'package:flutter/material.dart';
+
+import '../core/contsants/app_colors.dart';
 
 
 class CustomButton extends StatelessWidget {
@@ -47,7 +48,7 @@ class CustomButton extends StatelessWidget {
         BorderRadius.circular(buttonBorderRadius ?? 10.0);
     final Color defualtTextColor = buttonTextColor ?? Colors.white;
     final Color defaultBgColor =
-        buttonBackgorundColor ?? app_colors.primaryColor;
+        buttonBackgorundColor ?? AppColors.primaryColor;
 
     final Widget childButton = Center(
       child: showLoading
